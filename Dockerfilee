@@ -1,0 +1,14 @@
+# Use an empty base image
+FROM scratch
+
+# Set metadata for the image
+LABEL maintainer="yourname@example.com"
+
+# Copy your application files into the image
+COPY ./your_app_files /app
+
+# Set the working directory
+WORKDIR /app
+
+# Specify the command to run your application
+CMD ["./your_app_executable"]
